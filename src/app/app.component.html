@@ -1,0 +1,7 @@
+<div *ngIf="products$ | async as products">
+  <button (click)="fetchProducts()">Fetch products</button>
+
+  <div *ngIf="products.length > 0">fetched</div>
+  
+  <div *ngIf="showExcitedMessage">You pressed "fetch"!</div>
+</div>
